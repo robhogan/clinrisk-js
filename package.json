@@ -1,0 +1,45 @@
+{
+  "name": "qrisk",
+  "version": "3.2017.0",
+  "description": "An unofficial javascript port of the ClinRisk QRisk algorithm",
+  "main": "dist/qrisk.js",
+  "typings": "dist/qrisk.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rh389/clinrisk-js.git"
+  },
+  "keywords": [
+    "qrisk",
+    "clinrisk"
+  ],
+  "author": "Rob Hogan <roberthogan@blueyonder.co.uk>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rh389/clinrisk-js/issues"
+  },
+  "homepage": "https://github.com/rh389/clinrisk-js#readme",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "jest": "^23.0.0",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.8.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
