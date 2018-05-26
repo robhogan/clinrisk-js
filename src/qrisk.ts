@@ -53,8 +53,8 @@ export type CommonQRiskInput = {
   // Body-mass index
   bmi: number,
 
-  // Ethnic origin (nine categories)
-  // The values below are a best-guess map based on the web-based calculator
+  // Ethnic origin
+  // 0: White or not stated
   // 1: White or not stated
   // 2: Indian
   // 3: Pakistani
@@ -64,7 +64,7 @@ export type CommonQRiskInput = {
   // 7: Black African
   // 8: Chinese
   // 9: Other ethnic group
-  ethnicRisk: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9,
+  ethnicity: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9,
 
   // Family history of coronary heart disease in a first degree relative aged less than 60 years
   familyCardioVascularDisease: boolean,
@@ -86,7 +86,7 @@ export type CommonQRiskInput = {
 }
 
 export type MaleQRiskInput = CommonQRiskInput & {
-  gender: 'm'
+  sex: 'm'
 
   // Diagnosis of erectile dysfunction or treatment for erectile dysfunction (BNF chapter 7.4.5 including alprostadil,
   // phosphodiesterase type 5 inhibitors, papaverine, or phentolamine)
@@ -94,13 +94,13 @@ export type MaleQRiskInput = CommonQRiskInput & {
 }
 
 export type FemaleQRiskInput = CommonQRiskInput & {
-  gender: 'f'
+  sex: 'f'
 }
 
 export type QRiskInput = MaleQRiskInput | FemaleQRiskInput;
 
 export default function (i: QRiskInput) {
-  if (i.gender === 'm') {
+  if (i.sex === 'm') {
     return qRiskMale(i.age,
       i.atrialFibrillation ? 1 : 0,
       i.atypicalAntipsychotics ? 1 : 0,
@@ -115,7 +115,7 @@ export default function (i: QRiskInput) {
       i.diabetesType1 ? 1 : 0,
       i.diabetesType2 ? 1 : 0,
       i.bmi,
-      i.ethnicRisk,
+      i.ethnicity,
       i.familyCardioVascularDisease ? 1 : 0,
       i.cholesterolHdlRatio,
       i.systolicBloodPressure,
@@ -137,7 +137,7 @@ export default function (i: QRiskInput) {
       i.diabetesType1 ? 1 : 0,
       i.diabetesType2 ? 1 : 0,
       i.bmi,
-      i.ethnicRisk,
+      i.ethnicity,
       i.familyCardioVascularDisease ? 1 : 0,
       i.cholesterolHdlRatio,
       i.systolicBloodPressure,
