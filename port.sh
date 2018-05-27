@@ -8,7 +8,7 @@ find . -name '*.c' -exec sh -c 'cp "$0" "$(dirname "$0")/../lib/$(basename ${0%.
 #
 find ./modules/*/lib -name '*.ts' \
 -exec sh -c 'echo Porting "$0"' {} \; \
--exec sh -c 'sed -i.bak s/"static double"/"export function"/g "$0"' {} \; \
+-exec sh -c 'sed -i.bak -E -e s/"static double ([A-Za-z0-9_]+)"/"export default function"/g "$0"' {} \; \
 -exec sh -c 'sed -i.bak -E -e s/"int b_([A-Za-z_0-9]+),"/"b_\1: 0 | 1,"/g "$0"' {} \; \
 -exec sh -c 'sed -i.bak -E -e s/"int fh_([A-Za-z_0-9]+),"/"fh_\1: 0 | 1,"/g "$0"' {} \; \
 -exec sh -c 'sed -i.bak -E -e s/"int smoke_cat,"/"smoke_cat: 0 | 1 | 2 | 3 | 4,"/g "$0"' {} \; \

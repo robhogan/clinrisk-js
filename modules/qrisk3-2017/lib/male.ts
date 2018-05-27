@@ -32,7 +32,7 @@
  *
  */
 
-export function cvd_male_raw(
+export default function(
 age: number,b_AF: 0 | 1,b_atypicalantipsy: 0 | 1,b_corticosteroids: 0 | 1,b_impotence2: 0 | 1,b_migraine: 0 | 1,b_ra: 0 | 1,b_renal: 0 | 1,b_semi: 0 | 1,b_sle: 0 | 1,b_treatedhyp: 0 | 1,b_type1: 0 | 1,b_type2: 0 | 1,bmi: number,ethrisk: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9,fh_cvd: 0 | 1,rati: number,sbp: number,sbps5: number,smoke_cat: 0 | 1 | 2 | 3 | 4,surv: number,town: number
 )
 {
