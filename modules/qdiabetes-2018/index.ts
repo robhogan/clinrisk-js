@@ -5,7 +5,7 @@ import qDiaFemaleA from "./lib/femaleA";
 import qDiaFemaleB from "./lib/femaleB";
 import qDiaFemaleC from "./lib/femaleC";
 
-export const DISCLAIMER_TEXT: string = `The initial version of this file, to be found at http://qdiabetes.org, faithfully implements QDiabetes-2018.
+export const DISCLAIMER_TEXT: string = `The initial implementation, to be found at http://qdiabetes.org, faithfully implements QDiabetes-2018.
 ClinRisk Ltd. have released this code under the GNU Affero General Public License to enable others to implement the algorithm faithfully.
 However, the nature of the GNU Affero General Public License is such that we cannot prevent, for example, someone accidentally altering the coefficients, getting the inputs wrong, or just poor programming.
 ClinRisk Ltd. stress, therefore, that it is the responsibility of the end user to check that the source that they receive produces the same results as the original code found at http://qdiabetes.org.

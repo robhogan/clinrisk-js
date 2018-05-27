@@ -1,7 +1,7 @@
 import qRiskMale from "./lib/male";
 import qRiskFemale from "./lib/female";
 
-export const DISCLAIMER_TEXT: string = `The initial version of this file, to be found at http://svn.clinrisk.co.uk/opensource/qrisk2, faithfully implements QRISK3-2017.
+export const DISCLAIMER_TEXT: string = `The initial implementation, to be found at http://svn.clinrisk.co.uk/opensource/qrisk2, faithfully implements QRISK3-2017.
 ClinRisk Ltd. have released this code under the GNU Lesser General Public License to enable others to implement the algorithm faithfully.
 However, the nature of the GNU Lesser General Public License is such that we cannot prevent, for example, someone accidentally altering the coefficients, getting the inputs wrong, or just poor programming.
 ClinRisk Ltd. stress, therefore, that it is the responsibility of the end user to check that the source that they receive produces the same results as the original code found at https://qrisk.org.
