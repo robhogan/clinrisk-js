@@ -1,5 +1,6 @@
 import qRisk, { QRiskInput } from "../modules/qrisk3-2017/index";
 
+// The following results have been verified against the web-based calculator
 test('Correct QRisk scores when ethnicities are varied', () => {
   const common: QRiskInput = {
     sex: 'f',
