@@ -1,4 +1,4 @@
-import qRisk, { QRiskInput } from "../src/qrisk";
+import qRisk, { QRiskInput } from "../modules/qrisk3-2017/index";
 
 test('Correct QRisk scores when ethnicities are varied', () => {
   const common: QRiskInput = {

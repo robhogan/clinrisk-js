@@ -1,11 +1,11 @@
 {
-  "name": "qrisk",
-  "version": "3.2017.0",
-  "description": "An unofficial javascript port of the ClinRisk QRisk algorithm",
+  "name": "clinrisk-js-monorepo",
+  "version": "1.0.0-rc.1",
+  "description": "An unofficial javascript port of the ClinRisk algorithms",
   "main": "dist/qrisk.js",
   "typings": "dist/qrisk.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -d",
     "test": "jest"
   },
   "repository": {
