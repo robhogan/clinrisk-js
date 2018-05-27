@@ -5,7 +5,7 @@
   "main": "dist/qrisk.js",
   "typings": "dist/qrisk.d.ts",
   "scripts": {
-    "build": "tsc -d",
+    "build": "./build.sh",
     "test": "jest"
   },
   "repository": {
