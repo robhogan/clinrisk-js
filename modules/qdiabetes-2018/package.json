@@ -1,0 +1,21 @@
+{
+  "name": "qdiabetes-2018",
+  "version": "1.0.0",
+  "description": "An unofficial javascript port of ClinRisk's QDiabetes-2018 algorithm",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rh389/clinrisk-js.git"
+  },
+  "keywords": [
+    "clinrisk",
+    "qdiabetes"
+  ],
+  "author": "Rob Hogan <roberthogan@blueyonder.co.uk>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rh389/clinrisk-js/issues"
+  },
+  "homepage": "https://github.com/rh389/clinrisk-js#readme"
+}

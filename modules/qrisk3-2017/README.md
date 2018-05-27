@@ -1,5 +1,5 @@
 # QRisk
-[![npm version](https://badge.fury.io/js/qrisk.svg)](https://badge.fury.io/js/qrisk) [![CircleCI](https://circleci.com/gh/rh389/clinrisk-js.svg?style=svg)](https://circleci.com/gh/rh389/clinrisk-js)
+[![npm version](https://badge.fury.io/js/qrisk.svg)](https://badge.fury.io/js/qrisk3-2017) [![CircleCI](https://circleci.com/gh/rh389/clinrisk-js.svg?style=svg)](https://circleci.com/gh/rh389/clinrisk-js)
 An unofficial javascript port of the ClinRisk QRisk 3-2017 algorithm, with typescript typings
 
 ## API
