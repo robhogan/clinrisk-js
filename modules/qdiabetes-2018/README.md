@@ -1,5 +1,5 @@
-# QRisk
-[![npm version](https://badge.fury.io/js/qdiabetes-2018.svg)](https://badge.fury.io/js/qrisk) [![CircleCI](https://circleci.com/gh/rh389/clinrisk-js.svg?style=svg)](https://circleci.com/gh/rh389/clinrisk-js)
+# QDiabetes-2018
+[![npm version](https://badge.fury.io/js/qdiabetes-2018.svg)](https://badge.fury.io/js/qdiabetes-2018) [![CircleCI](https://circleci.com/gh/rh389/clinrisk-js.svg?style=svg)](https://circleci.com/gh/rh389/clinrisk-js)
 An unofficial javascript port of the ClinRisk QDiabetes 2018 algorithm, with typescript typings
 
 ## API
