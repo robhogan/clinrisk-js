@@ -1,6 +1,6 @@
 {
   "name": "qdiabetes-2018",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An unofficial javascript port of ClinRisk's QDiabetes-2018 algorithm",
   "main": "index.js",
   "typings": "index.d.ts",

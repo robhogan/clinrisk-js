@@ -1,4 +1,4 @@
-import qDiabetes, { QDiabetesInput } from "../modules/qdiabetes-2018";
+import qDiabetes, { hba1cIFCCtoDCCT, QDiabetesInput } from "../modules/qdiabetes-2018";
 
 // The following results have been verified against the web-based calculator
 test('Correct QDiabetes A scores when ethnicities are varied', () => {
@@ -50,4 +50,17 @@ test('Correct QDiabetes A scores when ethnicities are varied', () => {
 
   // Other
   expect(qDiabetes({ ...common, ethnicity: 9 })).toBe(96.41197923715296);
+});
+
+test('hbA1c unit conversion', () => {
+  expect(+hba1cIFCCtoDCCT(97).toFixed(1)).toBe(11.0);
+  expect(+hba1cIFCCtoDCCT(20).toFixed(1)).toBe(4.0);
+  expect(+hba1cIFCCtoDCCT(31).toFixed(1)).toBe(5.0);
+  expect(+hba1cIFCCtoDCCT(42).toFixed(1)).toBe(6.0);
+  expect(+hba1cIFCCtoDCCT(48).toFixed(1)).toBe(6.5);
+  expect(+hba1cIFCCtoDCCT(53).toFixed(1)).toBe(7.0);
+  expect(+hba1cIFCCtoDCCT(59).toFixed(1)).toBe(7.5);
+  expect(+hba1cIFCCtoDCCT(64).toFixed(1)).toBe(8.0);
+  expect(+hba1cIFCCtoDCCT(75).toFixed(1)).toBe(9.0);
+  expect(+hba1cIFCCtoDCCT(86).toFixed(1)).toBe(10.0);
 });

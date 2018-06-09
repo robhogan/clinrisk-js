@@ -58,8 +58,11 @@ Inputs are as follows:
   // Fasting blood glucose level (optional - preferred)
   fastingBloodGlucoseLevel?: number
 
-  // Glycated haemoglobin (HBA1c) value (optional - used if fastingBloodGlucoseLevel unavailable)
+  // Glycated haemoglobin (HBA1c) value as a DCCT percentage (optional - used if fastingBloodGlucoseLevel unavailable)
   hba1c?: number
+
+  // Glycated haemoglobin (HBA1c) as an IFCC value (optional - used if fastingBloodGlucoseLevel unavailable)
+  hba1cIfcc?: number
 
   // as measured by the Townsend score, where higher values indicate higher levels of material deprivation
   townsendDeprivation: number,

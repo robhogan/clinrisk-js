@@ -67,6 +67,9 @@ export type CommonQDiabetesInput = {
   // Glycated haemoglobin (HBA1c) value (optional - used if fastingBloodGlucoseLevel unavailable)
   hba1c?: number
 
+  // Glycated haemoglobin (HBA1c) as an IFCC value (optional - used if fastingBloodGlucoseLevel unavailable)
+  hba1cIfcc?: number
+
   // as measured by the Townsend score, where higher values indicate higher levels of material deprivation
   townsendDeprivation: number
 }
@@ -87,6 +90,10 @@ export type FemaleQDiabetesInput = CommonQDiabetesInput & {
 
 export type QDiabetesInput = MaleQDiabetesInput | FemaleQDiabetesInput;
 
+export function hba1cIFCCtoDCCT(ifcc: number) {
+  return (ifcc / 10.929) + 2.15
+}
+
 //NB: From https://www.bmj.com/content/359/bmj.j5019
 /*
 Conclusions Three updated QDiabetes risk models to quantify the absolute risk of type 2 diabetes were developed and
@@ -98,6 +105,10 @@ the models are used in clinical practice.
  */
 
 export default function (i: QDiabetesInput) {
+  if (i.hba1cIfcc) {
+    i.hba1c = hba1cIFCCtoDCCT(i.hba1cIfcc);
+  }
+
   if (i.sex === 'm') {
     // B is the best model where fasting blood glucose is available
     if (i.fastingBloodGlucoseLevel) {
